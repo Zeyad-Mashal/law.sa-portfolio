@@ -64,6 +64,12 @@
   font-size: 0.75rem;
 }
 
+.phone-ltr {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  display: inline-block;
+}
+
 .navbar-floating-wrap {
   margin-top: -10px;
   margin-bottom: -66px;

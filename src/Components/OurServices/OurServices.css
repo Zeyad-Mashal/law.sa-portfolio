@@ -1,0 +1,434 @@
+.profile-sections {
+  padding: 0 0 80px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(232, 241, 255, 0.8),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #f8fbff 0%, #ffffff 32%, #f9fbfe 100%);
+}
+
+.profile-shell {
+  width: min(1240px, 92%);
+  margin: 0 auto;
+  display: grid;
+  gap: 28px;
+}
+
+.profile-intro-card,
+.identity-card,
+.values-section,
+.services-section,
+.achievements-section,
+.differentiators-section,
+.commitment-section {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #e2ebf5;
+  border-radius: 24px;
+  box-shadow: 0 16px 38px rgba(13, 45, 82, 0.08);
+}
+
+.profile-intro-card {
+  padding: clamp(22px, 4vw, 34px);
+  display: grid;
+  grid-template-columns: minmax(280px, 1.2fr) minmax(240px, 0.8fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.section-kicker {
+  margin: 0 0 10px;
+  color: #9f7b2f;
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.section-heading {
+  margin: 0;
+  color: #0d2d52;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  line-height: 1.5;
+}
+
+.section-copy {
+  margin: 14px 0 0;
+  color: #415468;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+.profile-intro-badges {
+  display: grid;
+  gap: 14px;
+}
+
+.intro-highlight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 18px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
+  border: 1px solid #dbe6f4;
+  box-shadow: 0 12px 24px rgba(13, 45, 82, 0.06);
+}
+
+.intro-highlight-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #163a66, #2a5a92);
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 10px 18px rgba(22, 58, 102, 0.18);
+}
+
+.intro-highlight-content {
+  display: grid;
+  gap: 6px;
+}
+
+.intro-highlight-content h3 {
+  margin: 0;
+  color: #163a66;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.intro-highlight-content p {
+  margin: 0;
+  color: #61778e;
+  line-height: 1.8;
+  font-size: 0.93rem;
+}
+
+.identity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.identity-card {
+  padding: clamp(22px, 4vw, 32px);
+}
+
+.identity-icon,
+.service-card-icon,
+.commitment-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #163a66, #2a5a92);
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.identity-card h3,
+.service-card h3 {
+  margin: 18px 0 12px;
+  color: #0d2d52;
+  font-size: 1.25rem;
+}
+
+.identity-card p,
+.service-card p,
+.differentiator-card p {
+  margin: 0;
+  color: #42576d;
+  line-height: 1.95;
+}
+
+.values-section,
+.services-section,
+.achievements-section,
+.differentiators-section,
+.commitment-section {
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.section-header {
+  margin-bottom: 20px;
+}
+
+.services-section-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  min-width: 168px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  background: #163a66;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 12px 24px rgba(22, 58, 102, 0.16);
+}
+
+.services-section-btn:hover {
+  background: #0f2d52;
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 14px;
+}
+
+.value-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 58px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #f7fafe;
+  border: 1px solid #dbe6f4;
+  color: #163a66;
+  font-weight: 700;
+  text-align: center;
+}
+
+.value-chip svg {
+  color: #9f7b2f;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.service-card {
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: #fbfdff;
+  border: 1px solid #e3edf8;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(13, 45, 82, 0.1);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.achievement-card {
+  padding: 22px 18px;
+  text-align: center;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f8fd 100%);
+  border: 1px solid #e2ebf5;
+}
+
+.achievement-card strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #163a66;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.achievement-card span {
+  color: #4a6075;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.differentiators-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.differentiator-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid #dfebf8;
+}
+
+.differentiator-card svg {
+  margin-top: 6px;
+  color: #9f7b2f;
+  flex-shrink: 0;
+}
+
+.commitment-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.services-brand-row {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.services-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.services-brand-logo {
+  width: 62px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.services-brand-text {
+  display: grid;
+  gap: 2px;
+  text-align: right;
+}
+
+.services-brand-name {
+  color: #0d2d52;
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.services-brand-subtitle {
+  color: #9f7b2f;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.services-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 168px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  background: #163a66;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 12px 24px rgba(22, 58, 102, 0.16);
+}
+
+.services-contact-btn:hover {
+  background: #0f2d52;
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1100px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+
+  .achievements-grid,
+  .values-grid {
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .profile-intro-card,
+  .identity-grid,
+  .differentiators-grid,
+  .commitment-section {
+    grid-template-columns: 1fr;
+  }
+
+  .services-brand-row {
+    justify-content: center;
+  }
+
+  .services-brand {
+    justify-content: center;
+  }
+
+  .services-grid,
+  .achievements-grid,
+  .values-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-shell {
+    width: min(1240px, 94%);
+    gap: 20px;
+  }
+
+  .profile-sections {
+    padding-bottom: 56px;
+  }
+
+  .services-grid,
+  .achievements-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .achievement-card,
+  .value-chip,
+  .differentiator-card,
+  .intro-highlight-card {
+    border-radius: 16px;
+  }
+
+  .commitment-section {
+    gap: 16px;
+  }
+
+  .services-brand-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-brand-name {
+    font-size: 1.5rem;
+  }
+
+  .services-contact-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .services-section-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+}

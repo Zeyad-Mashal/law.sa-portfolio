@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa6";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
+import { contactEmail, contactNumbers } from "../../data/contact";
 
 const navLinks = [
   "الرئيسية",
@@ -43,17 +44,17 @@ const Navbar = () => {
           </div>
 
           <div className="top-strip-contact">
-            <a href="mailto:info@alfaozan.com">
+            <a href={`mailto:${contactEmail}`}>
               <FaEnvelope />
-              <span>info@alfaozan.com</span>
+              <span>{contactEmail}</span>
             </a>
-            <a href="tel:0559606663">
+            <a href={`tel:${contactNumbers[0].tel}`}>
               <FaPhone />
-              <span>0559606663</span>
+              <span className="phone-ltr">{contactNumbers[0].label}</span>
             </a>
-            <a href="tel:920005635">
+            <a href={`tel:${contactNumbers[1].tel}`}>
               <FaPhone />
-              <span>920005635</span>
+              <span className="phone-ltr">{contactNumbers[1].label}</span>
             </a>
             <span className="work-hours">
               <FaClock />
